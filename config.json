@@ -1,0 +1,33 @@
+{
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "listen": "0.0.0.0",
+      "port": "env:PORT",
+      "protocol": "vless",
+      "settings": {
+        "clients": [
+          {
+            "id": "c7b6d522-83bb-47cb-81a0-578150e402cd"
+          }
+        ],
+        "decryption": "none"
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/alexqueen/obam",
+          "heartbeatPeriod": 20
+        }
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom"
+    }
+  ]
+}
